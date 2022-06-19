@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(114, 252, 69);
+  background: linear-gradient(
+    90deg,
+    rgba(114, 252, 69, 1) 0%,
+    rgba(7, 166, 91, 1) 78%
+  );
+}
+
+[v-cloak] {
+    display: none ;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.54);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.2px);
+  -webkit-backdrop-filter: blur(10.2px);
+  padding: 2rem;
+}
+
+p {
+  margin: 1.5rem;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(88, 137, 220, 0.912);
+  transition: 0.2s ease-in;
+}
+
+.genderP {
+  color: rgba(220, 65, 220, 0.891);
+}
+
+button {
+  width: 8rem;
+  height: 2.5rem;
+  background-color: rgb(90, 184, 255);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+button:hover {
+  font-size: 1.1rem;
+}
+.genderBtn {
+  background-color: rgba(220, 65, 220, 0.891);
+}
+
+img {
+  width: 25%;
+  border-radius: 50%;
+  border: 5px solid rgb(90, 184, 255);
+  transition: 0.2s ease-in-out;
+}
+
+.borderImg {
+  border: 5px solid rgba(220, 65, 220, 0.891);
+}
