@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <div id="app"  >
+      <input
+        placeholder="Enter a country / city name"
+        type="text"
+        v-model="myInput"
+        v-on:keyup.enter="getWehather"
+      />
+      <h2>{{message}}</h2>
+      <h3>Timezone: {{timezone}}</h3>
+      <h3>{{data}}</h3>
+      <h3>{{temp}}</h3>
+      <h3>{{wheather}}</h3>
+      <h3>{{wind}}</h3>
+    </div>
+    <script src="index.js"></script>
+    <script>
+      const mountedApp = app.mount("#app");
+    </script>
+  </body>
+</html>
